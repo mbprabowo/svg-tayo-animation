@@ -1,0 +1,311 @@
+body {
+  background-color: #cdcdcd;
+}
+
+#road {
+  transform: translateX(0px);
+  transition: width .5s ease-out;
+}
+
+.cloud-center,
+.cloud-right {
+  animation: cloud_moving_right 4s infinite ease-in-out;
+}
+
+.cloud-left {
+  animation: cloud_moving_left 4s infinite ease-in-out;
+}
+
+.cloud-left,
+.cloud-right {
+  transition: opacity .5s;
+}
+
+#puteran {
+  transform-origin: 30.2px 30.2px;
+}
+
+.poros {
+  animation: bucket_rotate 4s infinite linear;
+}
+
+#tayo {
+  display: none;
+  animation: car_moving 10s linear infinite;
+}
+
+#bonbon {
+  display: none;
+  animation: car_moving_bonbon 6s linear infinite;
+}
+
+#plane {
+  display: none;
+  animation: plane_moving 10s linear infinite;
+}
+
+@keyframes cloud_moving_left {
+  0% { 
+    transform: translate(0px,0);
+  }
+  50% {
+    transform: translate(-10px,0);
+  }
+  100% { 
+    transform: translate(0px,0);
+  }
+}
+
+@keyframes cloud_moving_right {
+  0% { 
+    transform: translate(0px,0);
+  }
+  50% {
+    transform: translate(10px,0);
+  }
+  100% { 
+    transform: translate(0px,0);
+  }
+}
+
+@keyframes car_moving {
+  0% { 
+    transform: translate(-300px,0);
+  }
+  100% { 
+    transform: translate(100px,0);
+  }
+}
+
+@keyframes car_moving_bonbon {
+  0% { 
+    transform: translate(-150px,0);
+  }
+  100% { 
+    transform: translate(260px,0);
+  }
+}
+
+@keyframes plane_moving {
+  0% { 
+    transform: translate(-500px,0);
+  }
+  30% {
+    transform: translate(300px,0);
+  }
+  100% { 
+    transform: translate(2000px,0);
+  }
+}
+
+@keyframes bucket_rotate {
+  0% { 
+    transform: rotate(0) translateX(5px) rotate(0); 
+  }
+  100% { 
+    transform: rotate(360deg) translateX(5px) rotate(-360deg); 
+  }
+}
+
+@media only screen and (max-width: 968px) {
+  #trees-one {
+    opacity: 0;
+  }
+  #building-two {
+    transform: translateX(85px);
+  }
+  #road {
+    transform: translateX(50px);
+    width: 380px;
+  }
+  .cloud-left,
+  .cloud-right {
+    opacity: 0;
+  }
+  #bianglala,
+  #circus-small {
+    opacity: 0;
+  }
+  #tayo {
+    display: none;
+    animation: car_moving 5s linear infinite;
+  }
+
+  #bonbon {
+    display: none;
+    animation: car_moving_bonbon 3s linear infinite;
+  }
+
+  #plane {
+    display: none;
+    animation: plane_moving 10s linear infinite;
+  }
+  #trees-two {
+    transform: translateX(50px);
+  }
+
+  @keyframes car_moving {
+    0% { 
+      transform: translate(-200px,0);
+    }
+    100% { 
+      transform: translate(50px,0);
+    }
+  }
+
+  @keyframes car_moving_bonbon {
+    0% { 
+      transform: translate(-100px,0);
+    }
+    100% { 
+      transform: translate(200px,0);
+    }
+  }
+
+  @keyframes plane_moving {
+    0% { 
+      transform: translate(-500px,0);
+    }
+    30% {
+      transform: translate(300px,0);
+    }
+    100% { 
+      transform: translate(2000px,0);
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #building-two,
+  #trees-one {
+    opacity: 0;
+  }
+  #road {
+    transform: translateX(150px);
+    width: 200px;
+  }
+  .cloud-left,
+  .cloud-right,
+  .small-screen {
+    opacity: 0;
+  }
+  #building-three {
+    opacity: 0;
+  }
+
+  @keyframes car_moving {
+    0% { 
+      transform: translate(-150px,0);
+    }
+    100% { 
+      transform: translate(0px,0);
+    }
+  }
+
+  @keyframes car_moving_bonbon {
+    0% { 
+      transform: translate(0px,0);
+    }
+    100% { 
+      transform: translate(130px,0);
+    }
+  }
+
+  @keyframes plane_moving {
+    0% { 
+      transform: translate(-500px,0);
+    }
+    30% {
+      transform: translate(300px,0);
+    }
+    100% { 
+      transform: translate(2000px,0);
+    }
+  }
+}
+
+.st0{fill:#785D77;}
+.st1{fill:#808794;}
+.st2{fill:#C55E5F;}
+.st3{fill:#A14E4E;}
+.st4{fill:#DED8CA;}
+.st5{fill:#A774B2;}
+.st6{fill:#815A8D;}
+.st7{fill:#9DC45E;}
+.st8{fill:#759147;}
+.st9{fill:#DBBF69;}
+.st10{fill:#B09853;}
+.st11{fill:#5FC1C5;}
+.st12{fill:#4D9FA2;}
+.st13{fill:#7784AB;}
+.st14{fill:#5D6786;}
+.st15{fill:#8385A8;}
+.st16{fill:#FFF6CD;}
+.st17{fill:#7B4E4E;}
+.st18{fill:#F37878;}
+.st19{fill:#79706F;}
+.st20{fill:#F8F18F;}
+.st21{fill:#E1E661;}
+.st22{fill:#A3A398;}
+.st23{fill:#F5F5E4;}
+.st24{fill:#D07D69;}
+.st25{fill:#C26953;}
+.st26{fill:#B893B4;}
+.st27{fill:#A986A5;}
+.st28{fill:#E3CFE2;}
+.st29{fill:#E6EDA9;}
+.st30{fill:#CEE097;}
+.st31{fill:#A1C23E;}
+.st32{fill:#819C3C;}
+.st33{fill:#EAECE9;}
+.st34{fill:#939491;}
+.st35{fill:#8B8791;}
+.st36{fill:#817E88;}
+.st37{fill:#655E81;}
+.st38{fill:#DFDAEA;}
+.st39{fill:#66617B;}
+.st40{fill:#FFF4E4;}
+.st41{fill:#5E817A;}
+.st42{fill:#54746D;}
+.st43{fill:#7DACA2;}
+.st44{fill:#FFE3BD;}
+.st45{fill:#F27071;}
+.st46{fill:#D05B5B;}
+.st47{fill:#699299;}
+.st48{fill:#D1EDF7;}
+.st49{fill:#A24A23;}
+.st50{fill:#853D1C;}
+.st51{fill:#5FA24F;}
+.st52{fill:#569447;}
+.st53{fill:#70B08E;}
+.st54{fill:#51A175;}
+.st55{fill:#5D9275;}
+.st56{fill:#8A7A59;}
+.st57{fill:#6CB858;}
+.st58{fill:#4E853F;}
+.st59{fill:#B2C2C7;}
+.st60{fill:#8D9A9E;}
+.st61{fill:#FFFFFF;}
+.st62{fill:#D9D9D8;}
+.st63{fill:#99BF5D;}
+.st64{fill:#80A14E;}
+.st65{fill:#84A5B0;}
+.st66{fill:#76959E;}
+.st67{fill:#FEF7BF;}
+.st68{fill:#DDE9F7;}
+.st69{fill:#7993B6;}
+.st70{fill:#B5C7DF;}
+.st71{fill:#717D8B;}
+.st72{fill:#D0E4F6;}
+.st73{fill:#54657D;}
+.st74{fill:#414F61;}
+.st75{fill:#95B9E2;}
+.st76{fill:#759CD2;}
+.st77{fill:#5B6A7E;}
+.st78{fill:#9EAEC2;}
+.st79{fill:#6B737E;}
+.st80{fill:#FDFAD6;}
+.st81{fill:#747E8D;}
+.st82{fill:#FEE86B;}
+.st83{fill:#D6C458;}
+.st84{fill:#7C7B88;}
